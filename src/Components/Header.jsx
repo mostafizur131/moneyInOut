@@ -1,22 +1,22 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const menuItems = (
     <>
       <li className="font-semibold">
-        <Link to="/">Home</Link>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li className="font-semibold">
-        <Link to="/income">Income</Link>
+        <NavLink to="/income">Income</NavLink>
       </li>
       <li className="font-semibold">
-        <Link to="/expenses">Expenses</Link>
+        <NavLink to="/expenses">Expenses</NavLink>
       </li>
     </>
   );
   return (
-    <div className=" bg-base-100 shadow-md">
-      <div className=" navbar max-w-[1440px] mx-auto">
+    <div className="bg-base-100 shadow-md">
+      <div className=" navbar max-w-[1440px] mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
